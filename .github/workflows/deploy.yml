@@ -24,12 +24,11 @@ jobs:
             PUBLIC_TINA_CLIENT_ID: ${{ secrets.PUBLIC_TINA_CLIENT_ID }}
             TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
             SITE_URL: ${{ secrets.SITE_URL }}
-      # Run a build step here if your project requires
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+      - name: Publish
+        uses: cloudflare/pages-action@v1
         with:
-            apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-            accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-            command: pages deploy dist --project-name=tina-astro-kemo 
-            
-  
+              apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+              accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+              projectName: tina-astro-kemo # e.g. 'my-project'
+              directory: dist # e.g. 'dist'
+              gitHubToken: ${{ secrets.GITHUB_TOKEN }}
