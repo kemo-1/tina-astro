@@ -30,6 +30,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 507190fcd28b888632b1f95628832c6a
-          projectName: hr-ksa
+          projectName: tina-astro-kemo
           directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
