@@ -26,13 +26,10 @@ jobs:
             SITE_URL: ${{ secrets.SITE_URL }}
       # Run a build step here if your project requires
       - name: Deploy to Cloudflare Pages
-        uses: andykenward/github-actions-cloudflare-pages@v2.3.2
-        id: pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          cloudflare-account-id: 507190fcd28b888632b1f95628832c6a 
-          cloudflare-project-name: tina-astro-kemo
-          directory: dist
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
+            apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+            command: |
+             pages deploy dist --project-name=tina-astro-kemo --branch=main
+            
   
