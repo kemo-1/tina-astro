@@ -1,6 +1,7 @@
 name: Deploy to Pages
 
 on:
+  push:
   workflow_dispatch:
 
 permissions:
@@ -29,6 +30,6 @@ jobs:
         with:
               apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
               accountId: 507190fcd28b888632b1f95628832c6a 
-              projectName: tina-astro-kemo # e.g. 'my-project'
+              projectName: tina-astro-kemo2 # e.g. 'my-project'
               directory: dist # e.g. 'dist'
               gitHubToken: ${{ secrets.GITHUB_TOKEN }}
