@@ -7,6 +7,10 @@ import tinaDirective from "./astro-tina-directive/register"
 
 // https://astro.build/config
 export default defineConfig({
+	// i18n: {
+	// 	locales: ["ar", "en"],
+	// 	defaultLocale: "ar",
+	//   },
 	site: process.env.SITE_URL || `https://${process.env.VERCEL_URL}`,
 	integrations: [mdx(), sitemap(), react(), tinaDirective()],
 });
