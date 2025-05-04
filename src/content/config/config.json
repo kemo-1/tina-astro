@@ -1,38 +1,28 @@
 {
   "seo": {
-    "title": "Astro Blog + Tina",
-    "description": "Welcome to my website!",
-    "siteOwner": "Your name here"
+    "title": "عبدالحكبم الشنقيطي | مطور مواقع",
+    "description": "انا مطور مواقع ومحلل بيانات ادرس بكالوريوس إدارة أعمال",
+    "siteOwner": "عبدالحكبم الشنقيطي"
   },
   "nav": [
     {
-      "title": "Home",
+      "title": "الصفحة الرئيسية",
       "link": "/"
     },
     {
-      "title": "Blog",
+      "title": "المدونة",
       "link": "/blog"
     },
     {
-      "title": "About",
+      "title": "عن الموقع",
       "link": "/about"
     }
   ],
   "contactLinks": [
     {
-      "title": "Twitter",
-      "link": "https://x.com/tinacms",
+      "title": "تويتر",
+      "link": "https://x.com/",
       "icon": "TbBrandTwitter"
-    },
-    {
-      "title": "Docs",
-      "link": "https://tina.io/docs",
-      "icon": "TbBook2"
-    },
-    {
-      "title": "GitHub",
-      "link": "https://github.com/tinacms/tinacms",
-      "icon": "TbBrandGithub"
     }
   ]
 }

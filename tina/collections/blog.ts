@@ -3,7 +3,7 @@ import type { Collection } from "tinacms";
 export const BlogCollection: Collection = {
 
   name: "blog",
-  label: "Blogs",
+  label: "المدونة",
   path: "src/content/blog",
   format: "mdx",
   ui: {
@@ -15,34 +15,34 @@ export const BlogCollection: Collection = {
     {
       type: "string",
       name: "title",
-      label: "Title",
+      label: "العنوان",
       isTitle: true,
       required: true,
     },
     {
       name: "description",
-      label: "Description",
+      label: "الوصف",
       type: "string",
     },
     {
       name: "pubDate",
-      label: "Publication Date",
+      label: "تاريخ النشر",
       type: "datetime",
     },
     {
       name: "updatedDate",
-      label: "Updated Date",
+      label: "تاريخ اخر تحديث",
       type: "datetime",
     },
     {
       name: "heroImage",
-      label: "Hero Image",
+      label: "صورة المقال",
       type: "image",
     },
     {
       type: "rich-text",
       name: "body",
-      label: "Body",
+      label: "المحتوى",
       isBody: true,
     },
   ],

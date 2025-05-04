@@ -12,24 +12,24 @@ export const GlobalConfigCollection: Collection = {
   fields: [
     {
       name: "seo",
-      label: "General site config",
+      label: "إعدادات عامة للموقع",
       type: "object",
       fields: [
         {
           name: "title",
-          label: "Site title for SEO",
+          label: "عنوان الموقع الذي سيظهر عند مشاركة الروابط",
           type: "string",
           required: true,
         },
         {
           name: "description",
-          label: "Site description for SEO",
+          label: "وصف الموقع الذي سيظهر عند مشاركة الروابط",
           type: "string",
           required: true,
         },
         {
           name: "siteOwner",
-          label: "Your Name, Company Name (Used in the footer",
+          label: "اسم الشركة أو صاحب الموقع كما سيظهر في",
           required: true,
           type: "string",
           ui: {
@@ -41,7 +41,7 @@ export const GlobalConfigCollection: Collection = {
     },
     {
       name: "nav",
-      label: "Site Navigation Menu (Reorder, Add, Remove)",
+      label: "قائمة الروابط العلوية",
       type: "object",
       list: true,
       ui: {
@@ -54,13 +54,13 @@ export const GlobalConfigCollection: Collection = {
       fields: [
         {
           name: "title",
-          label: "Title of Nav Item",
+          label: "عنوان رابط علوي",
           type: "string",
           required: true
         },
         {
           name: "link",
-          label: "Path of the Nav Item",
+          label: "الرابط الذي ستذهب إليه",
           type: "string",
           required: true
 
@@ -69,7 +69,7 @@ export const GlobalConfigCollection: Collection = {
     },
     {
       name: "contactLinks",
-      label: "Contact Links",
+      label: "روابط التواصل",
       type: "object",
       list: true,
       ui: {
@@ -82,17 +82,17 @@ export const GlobalConfigCollection: Collection = {
       fields: [
         {
           name: "title",
-          label: "Title",
+          label: "العنوان",
           type: "string"
         },
         {
           name: "link",
-          label: "Link",
+          label: "الرابط",
           type: "string"
         },
         {
           name: "icon",
-          label: "Icon",
+          label: "الرمز",
           type: "string",
           ui: {
             //@ts-ignore
